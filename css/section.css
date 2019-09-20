@@ -1,0 +1,64 @@
+#section{
+	margin-top: 2%;
+}
+
+#section .section_container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#section .section_content{
+	width: 100%;
+	height: auto;
+	background: #000;
+	opacity: 0.97;
+	color: #fff;
+	text-align: center;
+}
+
+#section .section_article{
+	width: 90%;
+	height: auto;
+	margin: 0 5%;
+}
+
+.section_content .center-outer {
+	display: table;
+	width: 100%;
+	height: 20%;
+	margin-top: 2%;
+}
+
+.section_content .center-inner {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.section_content .bubbles {
+	display: inline-block;
+	position: relative;
+	font-size: 18px;
+}
+
+.section_content .bubbles h1 {
+	position: relative;
+	margin: 1em 0 0;
+	font-family: 'Fredoka One', cursive;
+	color: #fff;
+	z-index: 2;
+	cursor: default;
+}
+
+.section_content .bubbles h1:hover{
+	color: #CC0099;
+}
+
+.section_content .individual-bubble {
+	position: absolute;
+	border-radius: 100%;
+	bottom: 10px;
+	background-color: #fff;
+	z-index: 1;
+}

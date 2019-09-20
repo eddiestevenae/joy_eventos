@@ -1,0 +1,62 @@
+section{
+	margin-top: 2%;
+}
+
+section .section_content{
+	width: 100%;
+	height: auto;
+	background: #000;
+	opacity: 0.97;
+	color: #fff;
+	text-align: center;
+}
+
+.center-outer {
+display: table;
+width: 100%;
+height: 20%;
+margin-top: -3%;
+}
+
+.center-inner {
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+}
+
+.bubbles {
+display: inline-block;
+font-family: arial;
+position: relative;
+font-size: 20px;
+}
+
+.bubbles h1 {
+position: relative;
+margin: 1em 0 0;
+font-family: 'Luckiest Guy', cursive;
+color: #fff;
+z-index: 2;
+}
+
+h1{
+	cursor: default;
+}
+
+.bubbles h1:hover{
+	color: #CC0099;
+}
+
+.individual-bubble {
+position: absolute;
+border-radius: 100%;
+bottom: 10px;
+background-color: #fff;
+z-index: 1;
+}
+
+@media screen and (min-width: 1024px){
+	section .section_content{
+	width: 100%;
+	}
+}

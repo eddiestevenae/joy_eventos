@@ -1,0 +1,437 @@
+header{
+	width: 100%;
+	height: auto;
+}
+
+header .header_content{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+header .header_content input{
+	display: none;
+}
+
+header .header_content label{
+	float: left;
+	font-size: 30px;
+	margin: 1% 5%;
+	margin-right: 90%;
+	cursor: pointer;
+	z-index: 1000000;
+	animation-name: floating;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+header .header_content .bar1, .bar2, .bar3{
+    width: 30px;
+    height: 5px;
+    background-color: #99CC33;
+    margin: 6px 0;
+    transition: 0.5s;
+}
+
+header .header_content .menu_x .bar1{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+header .header_content .menu_x .bar2{
+    opacity: 0;
+}
+
+header .header_content .menu_x .bar3{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+header .header_content .menu_nav{
+	position: absolute;
+	margin: 10% 15%; 
+	left: 0;
+	width: 60%;
+	height: 120vh;
+	background: url(../img/globom.png)no-repeat;
+	transition: all 0.6s;
+	transform: translate(-120%);
+	font-size: 20px;
+	z-index: 100;
+}
+
+@keyframes floating {
+	from{transform: translate(0, 0px); }
+	56% {transform: translate(0, 20px);}
+	to  {transform: translate(0, -0px);}
+}
+
+header .header_content .menu_nav a{
+	display: block;
+	height: 15px;
+	text-decoration: none;
+	padding: 22px 0;
+	text-align: center;
+	margin-right: 5%;
+  	font-size: 19px;
+  	cursor: pointer;
+	color: #000;	
+}
+
+header .header_content .menu_nav .pod{
+	color: #fff;
+}
+
+header .header_content .menu_nav a:hover{
+	color: #BB1181;
+}
+
+header .header_content #menu-bar:checked ~ .menu_nav{
+	transform: translate(0%);
+}
+
+header .header_content .logo_content .logo_em:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+header .header_content .logo_content{
+	width: 100%;
+	height: 100%;
+	margin: 70% 5%;
+}
+
+header .header_content .logo{
+	float: left;
+	width: 32%;
+	padding: 0px;
+	margin-top: -10%;
+}
+
+header .header_content .logo1{
+	float: left;
+	margin-top: 1%;
+	margin-left: -10%;
+	width: 65%;
+	padding: 1px;
+}
+header .header_content .logo2{
+	float: left;
+	margin-top: 2%;
+	margin-left: 33%;
+	width: 46%;
+	padding: 1px;
+}
+
+header .header_content .container {
+ 	display: inline-block;
+}
+
+@media (min-width: 640px) {
+	header .header_content input{
+		display: none;
+	}
+
+	header .header_content label{
+		float: left;
+		font-size: 30px;
+		margin: 2% 0;
+		margin-right: 90%;
+		cursor: pointer;
+		z-index: 1000000;
+		animation-name: floating;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+	}
+
+	header .header_content .menu_nav{
+		position: absolute;
+		margin: 10% 15%; 
+		left: 0;
+		width: 60%;
+		height: 120vh;
+		background: url(../img/globom.png)no-repeat;
+		transition: all 0.6s;
+		transform: translate(-120%);
+		font-size: 20px;
+		z-index: 100;
+	}
+
+	header .header_content .menu_nav a{
+		display: block;
+		height: 15px;
+		text-decoration: none;
+		padding: 22px 0;
+		text-align: center;
+		margin-right: 45%;
+  		font-size: 19px;
+  		cursor: pointer;
+		color: #000;
+	}
+}
+
+@media (min-width: 728px) {
+	header .header_content input{
+		display: none;
+	}
+
+	header .header_content label{
+		float: left;
+		font-size: 30px;
+		margin: 2% 0;
+		margin-right: 90%;
+		cursor: pointer;
+		z-index: 1000000;
+		animation-name: floating;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+	}
+
+	header .header_content .menu_nav{
+		position: absolute;
+		margin: 10% 15%; 
+		left: 0;
+		width: 60%;
+		height: 120vh;
+		background: url(../img/globom.png)no-repeat;
+		transition: all 0.6s;
+		transform: translate(-120%);
+		font-size: 20px;
+		z-index: 100;
+	}
+
+	header .header_content .menu_nav a{
+		display: block;
+		height: 15px;
+		text-decoration: none;
+		padding: 22px 0;
+		text-align: center;
+		margin-right: 55%;
+  		font-size: 19px;
+  		cursor: pointer;
+		color: #000;
+	}
+
+	header .header_content .logo{
+		float: left;
+		width: 32%;
+		padding: 0;
+		margin-top: -10%;
+	}
+
+	header .header_content .logo1{
+		float: left;
+		margin-top: 2%;
+		margin-left: 0%;
+		width: 40%;
+		padding: 1px;
+	}
+
+	header .header_content .logo2{
+		float: left;
+		margin-top: 2%;
+		margin-left: 40%;
+		width: 25%;
+		padding: 1px;
+	}
+
+	header .header_content .logo_content{
+		width: 100%;
+		height: 15%;
+		margin: 20% 25%;
+	}
+}
+
+@media (min-width: 1024px) {
+	header .header_content label{
+		display: none;
+	}
+
+	header .header_content .menu_nav{
+		position: absolute;
+		margin:1% 2%; 
+		left: 0;
+		width: 21%;
+		height: 70vh;
+		background: url(../img/globom.png)no-repeat;
+		transform: translate(0%);
+		font-size: 18px;
+		text-align: center;
+		z-index: 100;
+		animation-name: floating;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+	}
+
+	header .header_content .menu_nav a{
+		display: block;
+		height: 15px;
+		text-decoration: none;
+		padding: 22px 0;
+		text-align: center;
+		margin-right: 2%;
+  		font-size: 19px;
+  		cursor: pointer;
+		color: #000;	
+	}
+
+	header .header_content .logo{
+		float: left;
+		width: 32%;
+		padding: 0;
+		margin-top: -10%;
+	}
+
+	header .header_content .logo1{
+		float: left;
+		margin-top: 2%;
+		margin-left: 0%;
+		width: 40%;
+		padding: 1px;
+	}
+
+	header .header_content .logo2{
+		float: left;
+		margin-top: 2%;
+		margin-left: 40%;
+		width: 25%;
+		padding: 1px;
+	}
+
+	header .header_content .logo_content{
+		width: 100%;
+		height: 15%;
+		margin: 20% 25%;
+	}
+
+	header .header_content .container {
+ 		margin-top: -12%;
+ 		margin-left: -5%;
+	}
+
+	.chevron {
+  		position: absolute;
+  		width: 2.1rem;
+  		height: 0.48rem;
+  		opacity: 0;
+  		cursor: pointer;
+  		-webkit-transform: scale(0.3);
+  		        transform: scale(0.3);
+  		-webkit-animation: move-chevron 3s ease-out infinite;
+  		        animation: move-chevron 3s ease-out infinite;
+	}
+
+.chevron:first-child {
+  -webkit-animation: move-chevron 3s ease-out 1s infinite;
+          animation: move-chevron 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  -webkit-animation: move-chevron 3s ease-out 2s infinite;
+          animation: move-chevron 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: #99CC33;
+}
+
+.chevron:before {
+  left: 0;
+  -webkit-transform: skewY(30deg);
+          transform: skewY(30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  -webkit-transform: skewY(-30deg);
+          transform: skewY(-30deg);
+}
+
+@-webkit-keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    -webkit-transform: translateY(2.28rem);
+    transform: translateY(2.28rem);
+  }
+  66.6% {
+    opacity: 1;
+    -webkit-transform: translateY(3.12rem);
+     transform: translateY(3.12rem);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(4.8rem) scale(0.5);
+    transform: translateY(4.8rem) scale(0.5);
+  }
+}
+
+@keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    -webkit-transform: translateY(2.28rem);
+    transform: translateY(2.28rem);
+  }
+  66.6% {
+    opacity: 1;
+    -webkit-transform: translateY(3.12rem);
+    transform: translateY(3.12rem);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(4.8rem) scale(0.5);
+    transform: translateY(4.8rem) scale(0.5);
+  }
+}
+
+}
+
+@media screen and (min-width: 1366px) {
+	header .header_content label{
+		display: none;
+	}
+
+	header .header_content .menu_nav{
+		position: absolute;
+		font-size: 20px;
+		z-index: 1000;
+	}
+
+	header .header_content .menu_nav a{
+		display: block;
+		height: 20px;
+		text-decoration: none;
+		padding: 22px;
+		margin-right: 25%;
+		text-align: center;
+	}
+
+	header .header_content .logo_content{
+		width: 100%;
+		height: 10%;
+		margin: 15% 25%;
+	}
+
+	header .header_content .container {
+ 		margin-top: -8%;
+ 		margin-left: -5%;
+	}
+
+}

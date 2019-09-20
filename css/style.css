@@ -1,0 +1,407 @@
+@import url(header.css);
+@import url(imgservi.css);
+@import url();
+@import url();
+@import url(animate.css);
+@import url(cargapro.css);
+@import url(formulario.css);
+body{
+	background-attachment: fixed;
+	background-position: center;
+}
+/*FONDO*/
+html, body { height: 100%; }
+
+body {
+  margin: 0 auto;
+}
+
+
+
+/*FLECHA ABAJO*/
+
+.container {
+   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 10vh;
+  top: 83%;
+  left: 46%;
+}
+
+.chevron {
+  position: absolute;
+  width: 2.1rem;
+  height: 0.48rem;
+  opacity: 0;
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+  -webkit-animation: move-chevron 3s ease-out infinite;
+          animation: move-chevron 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  -webkit-animation: move-chevron 3s ease-out 1s infinite;
+          animation: move-chevron 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  -webkit-animation: move-chevron 3s ease-out 2s infinite;
+          animation: move-chevron 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: #99CC33;
+}
+
+.chevron:before {
+  left: 0;
+  -webkit-transform: skewY(30deg);
+          transform: skewY(30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  -webkit-transform: skewY(-30deg);
+          transform: skewY(-30deg);
+}
+
+@-webkit-keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    -webkit-transform: translateY(2.28rem);
+    transform: translateY(2.28rem);
+  }
+  66.6% {
+    opacity: 1;
+    -webkit-transform: translateY(3.12rem);
+     transform: translateY(3.12rem);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(4.8rem) scale(0.5);
+    transform: translateY(4.8rem) scale(0.5);
+  }
+}
+
+@keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    -webkit-transform: translateY(2.28rem);
+    transform: translateY(2.28rem);
+  }
+  66.6% {
+    opacity: 1;
+    -webkit-transform: translateY(3.12rem);
+    transform: translateY(3.12rem);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(4.8rem) scale(0.5);
+    transform: translateY(4.8rem) scale(0.5);
+  }
+}
+/*FLECHA ARRIBA*/
+.ir-arriba {
+	display:none;
+	padding:10px;
+	background:#99CC33;
+	font-size:25px;
+	color:#000;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+	border-radius: 50%;
+	z-index: 1000;
+}
+/*IMAGENES SERVICIOS*/
+/*LINEA*/
+.banner {
+	background-color: black;
+	opacity: 0.9;
+	position: absolute;
+	top: 100%;
+	left: 0%;
+	padding-left: 20%;
+	padding-right: 27%;
+	z-index: 50;
+}
+
+.seccion {
+	width: 100%;
+	margin-left: 10%;
+}
+.galeria {
+	margin-top: 5%;
+	margin-bottom: auto;
+}
+.galeria ul li, .galeria li img {
+	-webkit-transition: all 1s cubic-bezier(.42,.2,.2,.64);
+  	-moz-transition: all 1s cubic-bezier(.42,.2,.2,.64);
+  	-o-transition: all 1s cubic-bezier(.42,.2,.2,.64);
+  	transition: all 1s cubic-bezier(..42,.2,.2,.64);
+}
+.galeria ul li {
+	position: relative;
+	float: left;
+	width: 140px;
+	height: 140px;
+	margin: 5px;
+	padding: 5px;
+	list-style-type: none;
+}
+.galeria ul li:hover{
+	z-index: 99;
+}
+.galeria ul li img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 1px solid black;
+	padding: 5px;
+	width: 140px;
+	height: 140px;
+	background: #abc4d6;
+	filter: grayscale(100%);
+	-webkit-filter:grayscale(100%);
+	-moz-filter:grayscale(100%;);
+	-ms-filter:grayscale(100%);
+	-o-filter:grayscale(100%);
+	border-radius: 75px;
+}
+.galeria ul li img:hover {
+	width: 280px;
+	height: 280px;
+	margin-top: -150px;
+	margin-left: -150px;
+	top: 50%;
+	left: 50%;
+	filter:grayscale(0%);
+	-webkit-filter:grayscale(0%);
+	-moz-filter:grayscale(0%;);
+	-ms-filter:grayscale(0%);
+	-o-filter:grayscale(0%);
+	border-radius: 40px;
+}
+/*FOOTER*/
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 60%;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-center .icon-location:hover{
+	color: #ff0000;
+}
+
+.footer-distributed .footer-center .icon-mobile:hover{
+	color: #ff0000;
+}
+
+.footer-distributed .footer-center .icon-mail-alt:hover{
+	color: #ff0000;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons .icon-facebook-squared:hover{
+	background: #3b5998;
+	color: #000;
+}
+
+.footer-distributed .footer-icons .icon-instagram:hover{
+	background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d)
+	color: #ff0000;
+}
+
+.footer-distributed .footer-icons .icon-whatsapp:hover{
+	background: #4dc247;
+	color: #000;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+}
+/*imagenes servicios*/
+
+
+
+
+
+
+
+
+
+
+

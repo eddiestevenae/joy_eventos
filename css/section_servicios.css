@@ -1,0 +1,43 @@
+#section_servicios{
+	margin-top: 0%;
+}
+
+#section_servicios .section_container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#section_servicios .section_content{
+	width: 100%;
+	height: auto;
+	color: #fff;
+	background: #000;
+	opacity: 0.97;
+	border-radius: 20px;
+	text-align: center;
+}
+
+#section_servicios .section_article{
+	width: 100%;
+	height: auto;
+    margin-bottom: 7%;
+}
+
+#section_servicios .section_content .bubbles h1{
+	top: -2%;
+}
+
+#section_servicios .center-outer {
+display: table;
+width: 100%;
+height: 4%;
+margin-top: 2%;
+}
+
+#section_servicios .center-inner {
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+}
+
