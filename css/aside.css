@@ -1,0 +1,9 @@
+#aside_chat .aside_container{
+	position: fixed;
+	top: 30%;
+	margin-right: 5%;
+}
+
+#aside_chat .aside_content script{
+	z-index: 100;
+}
